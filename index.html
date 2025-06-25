@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hospital OT Scheduler</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Operation Scheduler</h1>
+
+<div id="loginDiv">
+  <input id="email" type="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
+  <button onclick="login()">Login</button>
+  <button onclick="toggleForm()">Register instead</button>
+</div>
+
+<div id="registerDiv" style="display:none;">
+  <input id="regEmail" type="email" placeholder="Email">
+  <input id="regPassword" type="password" placeholder="Password">
+  <button onclick="register()">Register</button>
+  <button onclick="toggleForm()">Back to Login</button>
+</div>
+
+<div id="schedulerDiv" style="display:none;">
+  <input id="date" type="date">
+  <input id="time" type="time">
+  <input id="otId" placeholder="OT ID">
+  <input id="anesthesia" placeholder="Anesthesia">
+  <input id="doctor" placeholder="Doctor">
+  <input id="nurse" placeholder="Nurse">
+  <input id="remarks" placeholder="Remarks">
+  <button onclick="postSchedule()">Post Schedule</button>
+  <button onclick="logout()">Logout</button>
+
+  <ul id="scheduleList"></ul>
+</div>
+
+
+    <button onclick="logout()">Logout</button>
+  </div>
+  <!-- Firebase SDKs via CDN (Compatible version) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>

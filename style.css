@@ -1,0 +1,92 @@
+/* Base styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #f4f8fb;
+  color: #333;
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  color: #2a4d69;
+}
+
+/* Input and Textarea */
+input, textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #21867a;
+}
+
+/* Link */
+a {
+  color: #264653;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form Wrapper */
+#loginDiv, #registerDiv, #schedulerDiv {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+/* Schedule List */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  border-left: 5px solid #2a9d8f;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Schedule item format */
+li span {
+  display: block;
+  margin: 4px 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+}
